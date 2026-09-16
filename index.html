@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nafis Hasan — Graphics Designer, Creative Technologist, CSE student, AI/ML researcher and software developer based in Dhaka, Bangladesh." />
+  <meta name="theme-color" content="#07080c" />
+  <title>Nafis Hasan · Creative Technologist & Graphics Designer</title>
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Nafis Hasan · Creative Technologist & Graphics Designer" />
+  <meta property="og:description" content="Graphic design, creative technology, AI/ML research and software projects by Nafis Hasan." />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+
+<body>
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader-shell">
+      <div class="preloader-top">
+        <span>PORTFOLIO / 2026</span>
+        <span id="preloaderCount">00</span>
+      </div>
+      <div class="preloader-name">NAFIS<br />HASAN</div>
+      <div class="preloader-bar"><span id="preloaderBar"></span></div>
+      <div class="preloader-copy">loading creative systems</div>
+    </div>
+  </div>
+
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <canvas class="signal-field" id="signalField" aria-hidden="true"></canvas>
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="nav-wrap">
+    <nav class="nav glass" aria-label="Primary">
+      <a class="nav-brand" href="#home" aria-label="Nafis Hasan home">
+        <span class="brand-orbit"><span></span></span>
+        <span>nafis<span class="brand-dot">·</span>hasan</span>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#creative">Creative</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#research">Research</a>
+        <a href="#recognition">Awards</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <a class="nav-cv" href="assets/Nafis_Hasan_CV.pdf" target="_blank" rel="noopener">
+        CV <i class="fa-solid fa-arrow-up-right-from-square"></i>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <div class="mobile-menu glass" id="mobileMenu" aria-hidden="true">
+    <a href="#about">About</a>
+    <a href="#creative">Creative Portfolio</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#research">Research</a>
+    <a href="#recognition">Awards & Certificates</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+    <a class="mobile-cv" href="assets/Nafis_Hasan_CV.pdf" target="_blank" rel="noopener">View CV ↗</a>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="telemetry reveal">
+            <span class="live-dot"></span>
+            DHAKA · BANGLADESH · AVAILABLE FOR INTERNSHIPS
+          </p>
+
+          <h1 class="hero-name reveal">Nafis<br />Hasan</h1>
+
+          <div class="hero-role reveal">
+            <span class="mono-label">CURRENT SIGNAL</span>
+            <strong id="roleWord">Graphics Designer</strong>
+          </div>
+
+          <p class="hero-lede reveal">
+            I combine <b>visual design</b>, <b>computer science</b> and
+            <b>AI/ML research</b> to turn ideas into clear, useful and memorable
+            digital experiences.
+          </p>
+
+          <div class="hero-actions reveal">
+            <a class="btn btn-solid" href="#creative">
+              Explore creative work <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a class="btn btn-glass" href="assets/Nafis_Hasan_CV.pdf" target="_blank" rel="noopener">
+              <i class="fa-regular fa-file-lines"></i> View CV
+            </a>
+          </div>
+
+          <div class="hero-social reveal">
+            <a href="https://github.com/thenameisnafis" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/thenameisnafis/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:nafishasan149@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="hero-portrait reveal">
+          <div class="portrait-orbit orbit-one"></div>
+          <div class="portrait-orbit orbit-two"></div>
+          <div class="portrait-frame">
+            <img src="assets/profile/nafis.png" alt="Nafis Hasan" />
+            <div class="portrait-shade"></div>
+          </div>
+          <div class="hero-chip chip-design">
+            <span>01</span><b>GRAPHICS</b><small>visual communication</small>
+          </div>
+          <div class="hero-chip chip-ai">
+            <span>02</span><b>AI / ML</b><small>research & analysis</small>
+          </div>
+          <div class="hero-chip chip-code">
+            <span>03</span><b>SOFTWARE</b><small>systems & testing</small>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#about" aria-label="Scroll to about"><span></span></a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <header class="section-head reveal">
+        <p class="section-code">01 / ABOUT</p>
+        <h2>Creative instinct.<br />Technical structure.</h2>
+      </header>
+
+      <div class="about-layout">
+        <div class="about-lead reveal">
+          <p>
+            I am a Computer Science & Engineering student at
+            <strong>American International University-Bangladesh (AIUB)</strong>.
+            My portfolio crosses graphic design, creative technology, software
+            development, research and machine learning.
+          </p>
+          <p>
+            I began by working with graphics and visual communication, then
+            expanded into software engineering and AI/ML. That combination helps
+            me think about both <strong>how something looks</strong> and
+            <strong>how it works</strong>.
+          </p>
+        </div>
+
+        <div class="stats-grid" id="statsGrid"></div>
+      </div>
+
+      <div class="capability-row reveal">
+        <article>
+          <span>VISUAL</span>
+          <h3>Graphic Design</h3>
+          <p>Posters, event creatives, social content, typography and branded visual systems.</p>
+        </article>
+        <article>
+          <span>DIGITAL</span>
+          <h3>UI / Creative Tech</h3>
+          <p>Interface concepts, responsive layouts and technology-informed design decisions.</p>
+        </article>
+        <article>
+          <span>RESEARCH</span>
+          <h3>AI / ML</h3>
+          <p>Machine-learning experiments, evaluation, data analysis and academic research.</p>
+        </article>
+        <article>
+          <span>ENGINEERING</span>
+          <h3>Software</h3>
+          <p>Programming, databases, software testing, automation and structured development.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CREATIVE -->
+    <section class="section" id="creative">
+      <header class="section-head reveal">
+        <p class="section-code">02 / CREATIVE PORTFOLIO</p>
+        <h2>Design that carries<br />a message.</h2>
+      </header>
+
+      <div class="section-intro reveal">
+        <p>
+          Selected real design work from Literary Thirst and BAF Shaheen College Dhaka
+          Information Technology Club, including social media, event, certificate and festive designs.
+        </p>
+      </div>
+
+      <div class="filter-row reveal" id="creativeFilters"></div>
+      <div class="creative-grid" id="creativeGrid"></div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <header class="section-head reveal">
+        <p class="section-code">03 / EXPERIENCE</p>
+        <h2>Leadership through<br />design and technology.</h2>
+      </header>
+      <div class="experience-stack" id="experienceList"></div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <header class="section-head reveal">
+        <p class="section-code">04 / PROJECTS</p>
+        <h2>Systems, experiments<br />and things I built.</h2>
+      </header>
+
+      <div class="project-kicker reveal">
+        <p class="mono-label">CURRENT HIGHLIGHTS</p>
+        <p>Selected academic and software-engineering projects from my current CV.</p>
+      </div>
+      <div class="project-featured" id="projectList"></div>
+
+      <div class="archive-head reveal">
+        <div>
+          <p class="mono-label">ORIGINAL PORTFOLIO ARCHIVE</p>
+          <h3>Earlier work, fully preserved.</h3>
+        </div>
+        <p>All 12 projects from my first portfolio remain here with their original thumbnails and available links.</p>
+      </div>
+      <div class="archive-project-grid" id="originalProjectGrid"></div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section class="section" id="research">
+      <header class="section-head reveal">
+        <p class="section-code">05 / RESEARCH</p>
+        <h2>Machine learning with<br />measurable evaluation.</h2>
+      </header>
+      <div class="research-grid" id="researchGrid"></div>
+    </section>
+
+    <!-- AWARDS / CERTIFICATES -->
+    <section class="section" id="recognition">
+      <header class="section-head reveal">
+        <p class="section-code">06 / AWARDS & CERTIFICATES</p>
+        <h2>Awards, certificates &<br />recognition.</h2>
+      </header>
+      <div class="recognition-grid" id="recognitionGrid"></div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section" id="gallery">
+      <header class="section-head reveal">
+        <p class="section-code">07 / GALLERY</p>
+        <h2>A visual archive of<br />selected work.</h2>
+      </header>
+      <div class="gallery-grid" id="galleryGrid"></div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <header class="section-head reveal">
+        <p class="section-code">08 / TOOLKIT</p>
+        <h2>Tools for design,<br />development and research.</h2>
+      </header>
+      <div class="skills-grid" id="skillsGrid"></div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact-section" id="contact">
+      <div class="contact-panel glass reveal">
+        <p class="section-code">09 / CONTACT</p>
+        <h2>Have a role, project<br />or collaboration in mind?</h2>
+        <p class="contact-copy">
+          I am open to opportunities in Graphics Design, Video Editing / VFX,
+          AI/ML, Research, IT and Software.
+        </p>
+
+        <div class="contact-actions">
+          <a class="btn btn-solid" href="mailto:nafishasan149@gmail.com">
+            <i class="fa-solid fa-envelope"></i> Email me
+          </a>
+          <a class="btn btn-glass" href="assets/Nafis_Hasan_CV.pdf" target="_blank" rel="noopener">
+            <i class="fa-regular fa-file-lines"></i> View CV
+          </a>
+        </div>
+
+        <div class="contact-meta">
+          <a href="mailto:nafishasan149@gmail.com">nafishasan149@gmail.com</a>
+          <a href="tel:+8801989360698">+880 1989 360698</a>
+          <span>Dhaka, Bangladesh</span>
+          <a href="https://github.com/thenameisnafis" target="_blank" rel="noopener">github.com/thenameisnafis</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <strong>Nafis Hasan</strong>
+      <span>Graphics Designer · Creative Technologist · CSE Student</span>
+    </div>
+    <p>© <span id="year"></span> Nafis Hasan. Portfolio built for my own work.</p>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <img id="lightboxImg" src="" alt="" />
+    <div class="lightbox-copy">
+      <span id="lightboxCategory"></span>
+      <h3 id="lightboxTitle"></h3>
+      <p id="lightboxText"></p>
+    </div>
+  </dialog>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
